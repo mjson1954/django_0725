@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>나의 일기장</h1>
+        <ul>
+            {% for article in articles %}
+                <li>{{ article }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

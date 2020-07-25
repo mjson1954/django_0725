@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>일기 쓰기</h1>
+        <form action='{% url "article:create" %}' method='POST'>
+            {% csrf_token %}
+
+            제목:
+            <input type='text' name='title'/>
+            <br /><br />
+
+            내용:
+            <textarea name='content'></textarea>
+            <br /><br />
+
+            <input type='submit' value='글 쓰기' />
+        </form>
+    </body>
+</html>
